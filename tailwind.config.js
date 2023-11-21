@@ -7,12 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        white: "#ffffff",
+        black: "#000000",
+        "blue-800": "#232740",
+      },
+      screens: {
+        mlarge: "425px",
+        lplarge: "1440px",
+      },
+      minWidth: {
+        "1/2": "50%",
+        "9/12": "75%",
+        "10/12": "83.333333%",
+        "11/12": "91.666667%",
+      },
+      gridTemplateColumns: {
+        "2": "repeat(2, minmax(50%, 50%))",
       },
     },
   },
   plugins: [],
-}
+};
