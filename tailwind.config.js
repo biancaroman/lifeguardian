@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         white: "#ffffff",
         black: "#000000",
-        "blue-800": "#232740",
+        "yellow-800": "#F29F05",
       },
       screens: {
         mlarge: "425px",
