@@ -26,9 +26,9 @@ export function Header({ isAuthenticated }) {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="w-full min-h-28 py-8 bg-yellow-800 2xl:flex  2xl:justify-center shadow-xl">
+    <header className="w-full min-h-28 py-8 2xl:flex  2xl:justify-center shadow-xl">
       <div className="w-full max-w-lplarge flex flex-wrap justify-between  md:mx-auto lg:flex-nowrap lg:justify-between xl:max-w-7xl ">
-        <Link href={'/'} className=" ml-5 py-3 block font-bold text-center text-2xl">LifeGuardian</Link>
+        <Link href={'/'} className=" ml-5 py-3 block font-bold text-center text-2xl text-yellow-800">LifeGuardian</Link>
         <div className=" flex mr-5 items-center gap-2 sm:mr-10 sm:gap-6 h-10 lg:hidden ">
           {isAuthenticated && (
             <NavIcons isMobile={true} />
