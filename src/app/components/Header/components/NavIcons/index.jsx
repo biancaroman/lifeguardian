@@ -2,6 +2,7 @@
 
 import { Bell, User } from "phosphor-react";
 import { twMerge } from "tailwind-merge";
+import Link from 'next/link';
 
 export function NavIcons({ isMobile }) {
   return (
@@ -9,9 +10,11 @@ export function NavIcons({ isMobile }) {
       <button>
         <Bell size={30} weight="fill" />
       </button>
-      <button>
-        <User size={30} weight="fill" />
-      </button>
+      <Link href="portal/perfil"> 
+          <button>
+            <User size={30} weight="fill" />
+          </button>
+      </Link>
     </div>
   )
 }
