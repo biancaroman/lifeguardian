@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react';
-
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -9,7 +8,6 @@ import backgroundImage from '/public/img/BgLogin.jpg';
 
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useRouter } from 'next/router';
 
 const Login = () => {
   const [cpf, setCpf] = useState('');
@@ -26,8 +24,6 @@ const Login = () => {
   };
 
   const isSenhaValida = (senha) => senha.length >= 8;
-
-  const router = useRouter
 
   const salvarInfoLogin = (cpf) => {
     sessionStorage.setItem('loggedIn', 'true');
@@ -67,7 +63,7 @@ const Login = () => {
 
         if (data.success) {
           salvarInfoLogin(cpf);
-          router.push('/portal');
+          window.location.href = '/portal';
         }
       } else {
         const data = await response.json();

@@ -36,11 +36,6 @@ export default function Cadastro() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const formData = new FormData(event.target);
-    const id = formData.get('id')
-    const nome = formData.get('nome');
-    const idade = formData.get('idade');
-    const email = formData.get('email');
 
     if (!isCpfValido(cpf)) {
       toast.info('CPF inválido. Por favor, insira um CPF válido.');
